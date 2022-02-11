@@ -1,3 +1,5 @@
+import TimeInput from "../inputComponents/TimeInput";
+
 export default {
   name: "exampleDocumentType",
   title: "Example document type",
@@ -9,9 +11,10 @@ export default {
       type: "string",
     },
     {
-      name: "description",
-      title: "Description",
-      type: "text",
+      name: "time",
+      title: "Time",
+      type: "string",
+      inputComponent: TimeInput,
     },
   ],
 };
